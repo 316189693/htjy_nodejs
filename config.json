@@ -1,0 +1,23 @@
+{   
+    "server_type":  "dev",
+ 
+    "server": 3000,
+
+
+    "tms_api_port": 8773,
+    "project_44_host":"https://test-v2.p-44.com",
+  
+    "project_44_user_name": "",
+    "project_44_password": "",
+
+    "logger_path": "d:/logger",
+    "logger_file": "logger",
+
+
+    "db_host_tms": "dev.com",
+    "db_port_tms": 3306,
+    "db_user_tms": "tms_master_dev_user",
+    "db_password_tms": "D@M4s!3k",
+    "db_database_tms": "tms_dev_master",
+
+}

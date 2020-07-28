@@ -1,0 +1,344 @@
+{
+ 
+    "CARRIER_IDENTIFIER_TYPE_SCAC": "SCAC",
+    "CARRIER_IDENTIFIER_TYPE_DOT_NUMBER": "DOT_NUMBER",
+    "CARRIER_IDENTIFIER_TYPE_MC_NUMBER": "MC_NUMBER",
+    "CARRIER_IDENTIFIER_TYPE_P44_EU": "P44_EU",
+    "CARRIER_IDENTIFIER_TYPE_SYSTEM": "SYSTEM",
+  
+    "STOP_TYPE_ORIGIN": "ORIGIN",
+    "STOP_TYPE_DESTINATION": "DESTINATION",
+    "STOP_TYPE_TERMINAL": "TERMINAL",
+  
+    "SOURCE_TYPE_API": "API",
+    "SOURCE_TYPE_EDI": "EDI",
+
+    "SHIPMENT_IDENTIFIER_TYPE_PRO": "PRO",
+    "SHIPMENT_IDENTIFIER_TYPE_BILL_OF_LADING": "BILL_OF_LADING",
+    "SHIPMENT_IDENTIFIER_TYPE_CUSTOMER_REFERENCE": "CUSTOMER_REFERENCE",
+    "SHIPMENT_IDENTIFIER_TYPE_PICKUP": "PICKUP",
+    "SHIPMENT_IDENTIFIER_TYPE_PURCHASE_ORDER": "PURCHASE_ORDER",
+    "SHIPMENT_IDENTIFIER_TYPE_EXTERNAL": "EXTERNAL",
+  
+    "SHIPMENT_IDENTIFIER_SOURCE_CUSTOMER": "CUSTOMER",
+    "SHIPMENT_IDENTIFIER_SOURCE_CAPACITY_PROVIDER": "CAPACITY_PROVIDER",
+ 
+    "READY_FOR_PICKUP": "READY_FOR_PICKUP",
+    "UPDATED_PICKUP_APP": "UPDATED_PICKUP_APP",
+    "EXCEPTION": "EXCEPTION",
+    "PICKED_UP": "PICKED_UP",
+    "ARRIVED_AT_TERMINAL": "ARRIVED_AT_TERMINAL",
+    "RE_WEIGHT_RE_CLASS": "RE_WEIGHT_RE_CLASS",
+    "INFO": "INFO",
+    "UPDATED_DELIVERY_APPT": "UPDATED_DELIVERY_APPT",
+    "DEPARTED_TERMINA": "DEPARTED_TERMINA",
+    "OUT_FOR_DELIVERY": "OUT_FOR_DELIVERY",
+    "DELIVERED": "DELIVERED",
+  
+    "SHIP_WHEN_CAPACITY_AVAILABLE ": "SHIP_WHEN_CAPACITY_AVAILABLE",
+    "SHIPMENT_ALASKA_OR_HAWAII ": "SHIPMENT_ALASKA_OR_HAWAII",
+    "SPOT_MARKET_SHIPMENT ": "SPOT_MARKET_SHIPMENT",
+    "WEATHER_DELAY ": "WEATHER_DELAY",
+    "WEATHER_DELAY_CLEARED ": "WEATHER_DELAY_CLEARED",
+    "CANNOT_REACH_CONSIGNEE ": "CANNOT_REACH_CONSIGNEE",
+    "EMERGENCY_DELAY_IN_TRANSIT ": "EMERGENCY_DELAY_IN_TRANSIT",
+    "HAZARDOUS_MATERIAL ": "HAZARDOUS_MATERIAL",
+    "PROTECTIVE_SERVICE_REQUIRED ": "PROTECTIVE_SERVICE_REQUIRED",
+    "WORK_STOPPAGE ": "WORK_STOPPAGE",
+    "SHIPMENT_TENDERED_LATE  ": "SHIPMENT_TENDERED_LATE",
+    "WRONG_PRODUCT_SHIPPED  ": "WRONG_PRODUCT_SHIPPED",
+    "DAMAGED": "DAMAGED",
+    "CONSIGNEE_CLOSED": "CONSIGNEE_CLOSED",
+    "OVERAGE ": "OVERAGE",
+    "SHORTAGE": "SHORTAGE",
+    "DELIVERY_SHORTAGE ": "DELIVERY_SHORTAGE",
+    "CONS_DID_NOT_ORDER_FREIGHT ": "CONS_DID_NOT_ORDER_FREIGHT",
+    "DUPLICATE_SHIPMENT ": "DUPLICATE_SHIPMENT",
+    "LIMITED_ACCESS_LOCATIONS  ": "LIMITED_ACCESS_LOCATIONS",
+    "DELIVERY_REQUIRES_SPECIAL_EQUIPMENT  ": "DELIVERY_REQUIRES_SPECIAL_EQUIPMENT",
+    "CONS_CLOSED_FOR_HOLIDAY  ": "CONS_CLOSED_FOR_HOLIDAY",
+    "DELIVERY_ATTEMPTED_APPOINTMENT  ": "DELIVERY_ATTEMPTED_APPOINTMENT",
+    "DELIVERY_ATTEMPTED_NO_DOCK_SPACE  ": "DELIVERY_ATTEMPTED_NO_DOCK_SPACE",
+    "MISSING_PACKING_LIST": "MISSING_PACKING_LIST",
+    "CREDIT_HOLD ": "CREDIT_HOLD",
+    "CONSIGNEE_CANCELLED_ORDER ": "CONSIGNEE_CANCELLED_ORDER",
+    "PERMANENT_APPOINTMENT_REQUIRED ": "PERMANENT_APPOINTMENT_REQUIRED",
+    "DELIVERY_ATTEMPTED_REAR_LOAD ": "DELIVERY_ATTEMPTED_REAR_LOAD",
+    "APPOINTMENT_SET ": "APPOINTMENT_SET",
+    "INCORRECT_ADDRESS_PROVIDED ": "INCORRECT_ADDRESS_PROVIDED",
+    "INVALID_OR_MISSING_PURCHASE_ORDER_NUMBER ": "INVALID_OR_MISSING_PURCHASE_ORDER_NUMBER",
+    "RECONSIGNED_TO_NEW_CONSIGNEE  ": "RECONSIGNED_TO_NEW_CONSIGNEE",
+    "DAMAGED_ON_DELIVERY  ": "DAMAGED_ON_DELIVERY",
+    "REFUSED_BY_CONS_CANNOT_RECEIVE_ON_DELIVERY_DATE  ": "REFUSED_BY_CONS_CANNOT_RECEIVE_ON_DELIVERY_DATE",
+    "CONSIGNEE_DISPUTES_CHARGES  ": "CONSIGNEE_DISPUTES_CHARGES",
+    "NO_PAYMENT_AVAILABLE_AT_DELIVERY  ": "NO_PAYMENT_AVAILABLE_AT_DELIVERY",
+    "REFUSED_NO_RETURN_AUTHORIZATION  ": "REFUSED_NO_RETURN_AUTHORIZATION",
+    "WAITING_INSTRUCTIONS  ": "WAITING_INSTRUCTIONS",
+    "CANNOT_FIND_CONSIGNEE_ADDRESS  ": "CANNOT_FIND_CONSIGNEE_ADDRESS",
+    "GENERAL_EXCEPTION  ": "GENERAL_EXCEPTION",
+
+    "STATUS_CODES": {
+        "READY_FOR_PICKUP": {
+            "status_code": "READY_FOR_PICKUP",
+            "milestone": "At Origin",
+            "desc": "Shipment has been created, dispatched, and awaiting pickup"
+        },
+        "UPDATED_PICKUP_APP": {
+            "status_code": "UPDATED_PICKUP_APP",
+            "milestone": "At Origin",
+            "desc": "The carrier has updated the pickup window."
+        },
+        "EXCEPTION": {
+            "status_code": "EXCEPTION",
+            "milestone": "Any State",
+            "desc": "An Exception has occurred that may cause a delay in the transit of this shipment"
+        },
+        "PICKED_UP": {
+            "status_code": "PICKED_UP",
+            "milestone": "In Transit",
+            "desc": "Vehicle has completed Pick Up, and left location"
+        },
+        "ARRIVED_AT_TERMINAL": {
+            "status_code": "ARRIVED_AT_TERMINAL",
+            "milestone": "In Transit",
+            "desc": "Vehicle has arrived at a Terminal Location (not Origin or Destination)"
+        },
+        "RE_WEIGHT_RE_CLASS": {
+            "status_code": "RE-WEIGHT_RE-CLASS",
+            "milestone": "In Transit",
+            "desc": "The carrier has re-weighed or Re classed the shipment."
+        },
+        "INFO": {
+            "status_code": "INFO",
+            "milestone": "In Transit",
+            "desc": "Any updates while in transit (Trailer #, Just a update on location/time), or could be any updated information post delivery"
+        },
+        "UPDATED_DELIVERY_APPT": {
+            "status_code": "UPDATED_DELIVERY_APPT",
+            "milestone": "In Transit",
+            "desc": "Any status messages relating to, or updating Delivery Appt"
+        },
+        "DEPARTED_TERMINA": {
+            "status_code": "DEPARTED_TERMINA",
+            "milestone": "In Transit",
+            "desc": "Vehicle has left Terminal Location (not Origin or Destination)"
+        },
+        "OUT_FOR_DELIVERY": {
+            "status_code": "OUT_FOR_DELIVERY",
+            "milestone": "In Transit",
+            "desc": "Vehicle is in transit and the next stop is the destination"
+        },
+        "DELIVERED": {
+            "status_code": "DELIVERED",
+            "milestone": "At Destination",
+            "desc": "Vehicle has completed Delivery, and left Destination"
+        }
+    },
+    "REASON_DETAIL_CODES": {
+        "SHIP_WHEN_CAPACITY_AVAILABLE": {
+            "summary_code": "VEHICLE_ISSUE",
+            "detail_code": "SHIP_WHEN_CAPACITY_AVAILABLE",
+            "staus_code": "EXCEPTION"
+        },
+        "SHIPMENT_ALASKA_OR_HAWAII": {
+            "summary_code": "TRANSIT_ISSUE",
+            "detail_code": "SHIPMENT_ALASKA_OR_HAWAII",
+            "staus_code": "EXCEPTION"
+        },
+        "SPOT_MARKET_SHIPMENT": {
+            "summary_code": "SPOT_SHIPMENT",
+            "detail_code": "SPOT_MARKET_SHIPMENT",
+            "staus_code": "INFO"
+        },
+        "WEATHER_DELAY": {
+            "summary_code": "WEATHER_ISSUE",
+            "detail_code": "WEATHER_DELAY",
+            "staus_code": "EXCEPTION"
+        },
+        "WEATHER_DELAY_CLEARED": {
+            "summary_code": "WEATHER_ISSUE",
+            "detail_code": "WEATHER_DELAY_CLEARED",
+            "staus_code": "INFO"
+        },
+        "CANNOT_REACH_CONSIGNEE": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "CANNOT_REACH_CONSIGNEE",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "EMERGENCY_DELAY_IN_TRANSIT": {
+            "summary_code": "TRANSIT_ISSUE",
+            "detail_code": "EMERGENCY_DELAY_IN_TRANSIT",
+            "staus_code": "EXCEPTION"
+        },
+        "HAZARDOUS_MATERIAL": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "HAZARDOUS_MATERIAL",
+            "staus_code": "INFO"
+        },
+        "PROTECTIVE_SERVICE_REQUIRED": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "PROTECTIVE_SERVICE_REQUIRED",
+            "staus_code": "INFO"
+        },
+        "WORK_STOPPAGE": {
+            "summary_code": "STAFFING_ISSUE",
+            "detail_code": "WORK_STOPPAGE",
+            "staus_code": "EXCEPTION"
+        },
+        "SHIPMENT_TENDERED_LATE": {
+            "summary_code": "TRANSIT_ISSUE",
+            "detail_code": "SHIPMENT_TENDERED_LATE",
+            "staus_code": "EXCEPTION"
+        },
+        "WRONG_PRODUCT_SHIPPED": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "WRONG_PRODUCT_SHIPPED",
+            "staus_code": "EXCEPTION"
+        },
+        "DAMAGED": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "DAMAGED",
+            "staus_code": "EXCEPTION"
+        },
+        "CONSIGNEE_CLOSED": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "CONSIGNEE_CLOSED",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "OVERAGE": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "OVERAGE",
+            "staus_code": "DELIVERED"
+        },
+        "SHORTAGE": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "SHORTAGE",
+            "staus_code": "DELIVERED"
+        },
+        "DELIVERY_SHORTAGE": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "DELIVERY_SHORTAGE",
+            "staus_code": "DELIVERED"
+        },
+        "CONS_DID_NOT_ORDER_FREIGHT": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "CONS_DID_NOT_ORDER_FREIGHT",
+            "staus_code": "EXCEPTION"
+        },
+        "DUPLICATE_SHIPMENT": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "DUPLICATE_SHIPMENT",
+            "staus_code": "EXCEPTION"
+        },
+        "LIMITED_ACCESS_LOCATIONS": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "LIMITED_ACCESS_LOCATIONS",
+            "staus_code": "EXCEPTION"
+        },
+        "DELIVERY_REQUIRES_SPECIAL_EQUIPMENT": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "DELIVERY_REQUIRES_SPECIAL_EQUIPMENT",
+            "staus_code": "EXCEPTION"
+        },
+        "CONS_CLOSED_FOR_HOLIDAY": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "CONS_CLOSED_FOR_HOLIDAY",
+            "staus_code": "EXCEPTION"
+        },
+        "DELIVERY_ATTEMPTED_APPOINTMENT": {
+            "summary_code": "APPOINTMENT_ISSUE",
+            "detail_code": "DELIVERY_ATTEMPTED_APPOINTMENT",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "DELIVERY_ATTEMPTED_NO_DOCK_SPACE": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "DELIVERY_ATTEMPTED_NO_DOCK_SPACE",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "MISSING_PACKING_LIST": {
+            "summary_code": "PAPERWORK_ISSUE",
+            "detail_code": "MISSING_PACKING_LIST",
+            "staus_code": "INFO"
+        },
+        "CREDIT_HOLD": {
+            "summary_code": "BILLING_ISSUE",
+            "detail_code": "CREDIT_HOLD",
+            "staus_code": "INFO"
+        },
+        "CONSIGNEE_CANCELLED_ORDER": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "CONSIGNEE_CANCELLED_ORDER",
+            "staus_code": "EXCEPTION"
+        },
+        "PERMANENT_APPOINTMENT_REQUIRED": {
+            "summary_code": "APPOINTMENT_ISSUE",
+            "detail_code": "PERMANENT_APPOINTMENT_REQUIRED",
+            "staus_code": "INFO"
+        },
+        "DELIVERY_ATTEMPTED_REAR_LOAD": {
+            "summary_code": "APPOINTMENT_ISSUE",
+            "detail_code": "DELIVERY_ATTEMPTED_REAR_LOAD",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "APPOINTMENT_SET": {
+            "summary_code": "APPOINTMENT_ISSUE",
+            "detail_code": "APPOINTMENT_SET",
+            "staus_code": "UPDATED_DELIVERY_APPT"
+        },
+        "INCORRECT_ADDRESS_PROVIDED": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "INCORRECT_ADDRESS_PROVIDED",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "INVALID_OR_MISSING_PURCHASE_ORDER_NUMBER": {
+            "summary_code": "PAPERWORK_ISSUE",
+            "detail_code": "INVALID_OR_MISSING_PURCHASE_ORDER_NUMBER",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "RECONSIGNED_TO_NEW_CONSIGNEE": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "RECONSIGNED_TO_NEW_CONSIGNEE",
+            "staus_code": "DELIVERED"
+        },
+        "DAMAGED_ON_DELIVERY": {
+            "summary_code": "SHIPMENT_ISSUE",
+            "detail_code": "DAMAGED_ON_DELIVERY",
+            "staus_code": "DELIVERED"
+        },
+        "REFUSED_BY_CONS_CANNOT_RECEIVE_ON_DELIVERY_DATE": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "REFUSED_BY_CONS_CANNOT_RECEIVE_ON_DELIVERY_DATE",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "CONSIGNEE_DISPUTES_CHARGES": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "CONSIGNEE_DISPUTES_CHARGES",
+            "staus_code": "INFO"
+        },
+        "NO_PAYMENT_AVAILABLE_AT_DELIVERY": {
+            "summary_code": "BILLING_ISSUE",
+            "detail_code": "NO_PAYMENT_AVAILABLE_AT_DELIVERY",
+            "staus_code": "INFO"
+        },
+        "REFUSED_NO_RETURN_AUTHORIZATION": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "REFUSED_NO_RETURN_AUTHORIZATION",
+            "staus_code": "EXCEPTION "
+        },
+        "WAITING_INSTRUCTIONS": {
+            "summary_code": "TRANSIT_ISSUE",
+            "detail_code": "WAITING_INSTRUCTIONS",
+            "staus_code": "INFO"
+        },
+        "CANNOT_FIND_CONSIGNEE_ADDRESS": {
+            "summary_code": "DELIVERY_ISSUE",
+            "detail_code": "CANNOT_FIND_CONSIGNEE_ADDRESS",
+            "staus_code": "OUT_FOR_DELIVERY"
+        },
+        "GENERAL_EXCEPTION": {
+            "summary_code": "OTHER_EXCEPTION",
+            "detail_code": "GENERAL_EXCEPTION",
+            "staus_code": "EXCEPTION"
+        }
+    }
+}
