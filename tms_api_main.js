@@ -88,9 +88,27 @@ function assignId(req, res, next) {
     next()
 }
 
+function log(logger, e){
+    if (logger && e) {
+        logger.error(`\r\n ***************** Error ***************** 
+                          \nBaseURL: ${e.config && e.config.baseURL? e.config.baseURL : ""}
+                          \nURL: ${e.config && e.config.url ? e.config.url : ""}
+                          \nRequest: ${e.config && e.config.data ? e.config.data: ""}
+                          \nMethod: ${e.config && e.config.method ? e.config.method : ""}
+                          \nAuth: ${e.config && e.config.auth ? JSON.stringify(e.config.auth) : ""}
+                          \nStatus: ${e.response && e.response.status? e.response.status : -1}
+                          \nstatusText: ${e.response && e.response.statusText ? e.response.statusText : ""}
+                          \nerrorMessage: ${e.response && e.response.data && e.response.data.errorMessage? e.response.data.errorMessage : ""}
+                          \nerrors: ${e.response && e.response.data && e.response.data.errors? JSON.stringify(e.response.data.errors) : ""}
+                          \nStack: ${e.stack}
+                          \n***************** Error *****************
+               `);
+    }
+};
+
 function handleError(logger) {
     return function (err, req, res, next) {
-        logger.error(err.stack || err.message);
+        log(logger, err);
         let rst =Object.assign({},{'reference_id':req.id},
                                   {"error":err,
                                    "stack": (err.response && err.response.data) || err.stack || err.message
